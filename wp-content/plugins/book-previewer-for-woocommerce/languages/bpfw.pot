@@ -1,0 +1,82 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Book Previewer for Woocommerce\n"
+"POT-Creation-Date: 2019-10-02 08:57+0700\n"
+"PO-Revision-Date: 2017-07-08 15:18+0700\n"
+"Last-Translator: \n"
+"Language-Team: G5Team\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.6\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: en_GB\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: _e;_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"esc_attr__;esc_attr_e;esc_attr_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;"
+"_n_noop:1,2;_nx_noop:1,2,3c;__\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: _remove_when_deploy\n"
+"X-Poedit-SearchPathExcluded-1: assets\n"
+"X-Poedit-SearchPathExcluded-2: .idea\n"
+"X-Poedit-SearchPathExcluded-3: .svn\n"
+
+#: admin/templates/back-image-field.php:23
+msgid "Click the image to edit or update"
+msgstr ""
+
+#: admin/templates/back-image-field.php:24 inc/admin.class.php:27
+msgid "Product Back Image"
+msgstr ""
+
+#: admin/templates/back-image-field.php:25
+msgid "Use this image"
+msgstr ""
+
+#: admin/templates/back-image-field.php:25
+msgid "Set product back image"
+msgstr ""
+
+#: admin/templates/back-image-field.php:26
+msgid "Remove product back image"
+msgstr ""
+
+#: book-previewer-for-woocommerce.php:79
+msgid ""
+"Book Previewer For Woocommerce is enabled but not effective. It "
+"requires WooCommerce in order to work."
+msgstr ""
+
+#: book-previewer-for-woocommerce.php:88
+#, php-format
+msgid ""
+"Book Previewer For Woocommerce is enabled but not effective. Please <a "
+"href=\"%s\">deactivate</a> plugin Read Book Addons For Book Store "
+"(deprecated version)."
+msgstr ""
+
+#: templates/popup.php:21
+msgid "You are previewing: "
+msgstr ""
+
+#: templates/popup.php:48
+msgid "Zoom in"
+msgstr ""
+
+#: templates/popup.php:51
+msgid "Zoom out"
+msgstr ""
+
+#: templates/product-image.php:54 templates/product-image.php:60
+msgid "Awaiting product image"
+msgstr ""
+
+#: templates/product-image.php:79
+msgid "Flip to Back"
+msgstr ""
+
+#: templates/product-image.php:85
+msgid "Look inside"
+msgstr ""

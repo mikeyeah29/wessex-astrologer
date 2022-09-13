@@ -1,0 +1,27 @@
+.ube-breadcrumbs {
+	font-size: 15px;
+	color: var(--g5-color-text-main);
+	font-style: italic;
+	font-family: var(--g5-font-primary);
+
+	a {
+		@include transition(color .3s);
+		text-decoration: none;
+	}
+
+	a:hover, .active {
+		color: var(--g5-color-accent);
+	}
+
+	.breadcrumb-item + .breadcrumb-item:before{
+		font-size: 1em;
+	}
+}
+
+.elementor-widget.elementor-widget-ube-breadcrumbs ol.ube-breadcrumbs{
+	padding-left: 0;
+	.breadcrumb-item + .breadcrumb-item:before{
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+}

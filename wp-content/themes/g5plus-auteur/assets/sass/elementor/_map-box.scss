@@ -1,0 +1,14 @@
+.ube-map-box-effect {
+	//--map-box-effect-color1: rgba(var(--g5-color-accent-r), var(--g5-color-accent-g), var(--g5-color-accent-b), 0.3);
+	--map-box-effect-color2: var(--g5-color-accent);
+
+	.mapboxgl-marker {
+		svg g[fill] {
+			fill:  var(--g5-color-accent);
+		}
+
+		&:after {
+			border-color: var(--g5-color-accent);
+		}
+	}
+}

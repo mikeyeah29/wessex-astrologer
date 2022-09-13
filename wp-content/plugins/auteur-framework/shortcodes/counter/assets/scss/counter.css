@@ -1,0 +1,47 @@
+.gsf-counter {
+  position: relative;
+}
+.gsf-counter .counter-value {
+  margin-top: 0;
+  margin-bottom: 29px;
+}
+.gsf-counter .counter-title {
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+.gsf-counter.counter-size-md .counter-value {
+  font-size: 34px;
+}
+.gsf-counter.counter-size-md .counter-title {
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+.gsf-counter.counter-size-lg .counter-value {
+  font-size: 56px;
+}
+.gsf-counter.counter-size-lg .counter-title {
+  font-size: 15px;
+}
+.gsf-counter.vertical-left-line {
+  position: relative;
+  padding-left: 20px;
+}
+.gsf-counter.vertical-left-line:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background-color: #d8d8d8;
+}
+
+@media (max-width: 425px) {
+  .gsf-counter .ct-content-right {
+    display: block;
+    margin: 0;
+  }
+}
+
+/*# sourceMappingURL=counter.css.map */

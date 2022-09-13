@@ -1,0 +1,21 @@
+.ube-heading-title {
+	font-size: 56px;
+	font-weight: 400;
+	mark {
+		font-style: italic;
+		font-weight: 400;
+		color: inherit;
+	}
+}
+
+.ube-heading-sub-title {
+	font-size: 18px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: var(--g5-color-accent);
+	letter-spacing: 5px;
+}
+
+.ube-heading-description {
+	font-size: 18px;
+}

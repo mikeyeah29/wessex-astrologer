@@ -1,0 +1,19 @@
+@import "../../sass/mixin";
+@import "../../sass/variables";
+@import "../../sass/root";
+@import "../../sass/mixin-widget";
+
+.editor-styles-wrapper.editor-styles-wrapper {
+	.editor-post-title__block .editor-post-title__input {
+		font-size: 40px !important;
+		font-weight: 400;
+		color: var(--g5-color-heading);
+		-webkit-border-radius: 0;
+		-moz-border-radius: 0;
+		border-radius: 0;
+	}
+
+	.components-icon-button.block-editor-block-switcher__toggle {
+		overflow: hidden;
+	}
+}

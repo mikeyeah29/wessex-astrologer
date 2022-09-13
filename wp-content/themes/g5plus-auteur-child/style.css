@@ -1,0 +1,98 @@
+/*
+Theme Name:         G5Plus Auteur Child Theme
+Theme URI:          https://auteur.g5plus.net/
+Description:        G5Plus Auteur Child Theme
+Version:            1.0
+Author:             g5plus
+Author URI:         http://g5plus.net/
+Template:     		g5plus-auteur
+
+License:            GNU General Public License v2 or later
+License URI:        http://www.gnu.org/licenses/gpl-2.0.html
+
+Tags: 				two-columns, three-columns, left-sidebar, right-sidebar, custom-background, custom-header, custom-menu, editor-style, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready, accessibility-ready
+Text Domain: 		g5plus-auteur
+*/
+/************************************************************************************
+Put your custom CSS below this block :)
+*************************************************************************************/
+
+.logo-text {
+    text-align: center;
+}
+
+/* Top Bar */
+
+.rwd-top-bar {
+    padding: 6px 0px;
+    border-bottom: solid 1px var(--g5-background-color-contrast-04);
+}
+
+.rwd-top-bar-contact a {
+    font-size: 12px;
+}
+
+.rwd-top-bar-contact i {
+    color: var(--g5-color-link);
+    font-size: 13px;
+}
+
+.rwd-top-bar-contact__item {
+    margin-right: 16px;
+}
+
+/* Social Media */
+
+.rwd-socials {
+    text-align: right;
+    margin-top: 7px !important;
+}
+
+.rwd-socials li {
+    margin: 0 5px 0px 0 !important;
+}
+
+.rwd-socials li a {
+    display: inline-block;
+    padding: 0px 5px;
+}
+
+/* Blog Page */
+
+.blog .layout-large-image .entry-thumbnail {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.blog .layout-large-image .entry-thumbnail img {
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Products */
+
+/* .woocommerce-shop  */
+.product-thumb img {
+    width: 100%!important;
+    height: 330px;
+    object-fit: contain;
+}
+
+/* Footer */
+
+.wa-footer {
+    padding: 100px 0px;
+}
+
+.wa-footer-bottom {
+    text-align: center;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.wa-footer-bottom p {
+    margin-top: 10px;
+}

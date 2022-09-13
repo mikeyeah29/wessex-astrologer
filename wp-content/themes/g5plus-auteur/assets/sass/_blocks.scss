@@ -1,0 +1,225 @@
+ul.wp-block-gallery {
+  padding: 0;
+}
+.wp-block-pullquote {
+  border-top: 4px solid var(--g5-color-heading);
+  border-bottom: 4px solid var(--g5-color-heading);
+  color: var(--g5-color-heading);
+
+  blockquote:not(.is-large):not(.is-style-large) {
+    padding-left: 0;
+    border-left: none;
+  }
+}
+
+.wp-block-table.is-style-stripes tr:nth-child(odd) {
+  background-color: var(--g5-background-color-contrast-03);
+}
+
+.wp-block-table.is-style-stripes td {
+   border-color: transparent;
+}
+
+ul.wp-block-archives-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+  li {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    @include d-flex();
+    @include flex-flow(row wrap);
+    font-family: var(--g5-font-primary);
+    line-height: 20px;
+    + li {
+      margin-top: 16px;
+    }
+    > a {
+      color: inherit;
+      @include transition(all .3s);
+      position: relative;
+      display: inline-block;
+      font-size: 15px;
+      padding: 0;
+      &:hover,
+      &:focus,
+      &:active {
+        text-decoration: none;
+        color: var(--g5-color-accent);
+      }
+      &:before {
+        background-color: var(--g5-color-muted);
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -1px;
+        height: 1px;
+        @include transition(transform 0.4s ease);
+        @include transform(scale3d(0,1,1));
+        @include transform-origin(100%,50%);
+        @include transition-timing-function(cubic-bezier(0.8, 0, 0.2, 1));
+      }
+    }
+  }
+  .count {
+    font-size: 15px;
+    font-stretch: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+    @include transition(all 0.3s);
+    margin-left: 10px;
+    &:before {
+      content: '(';
+    }
+    &:after {
+      content: ')';
+    }
+  }
+
+  li > a:hover,
+  li > a:focus,
+  li > a:active{
+    color: var(--g5-color-heading);
+    + span.count {
+      color: var(--g5-color-heading);
+    }
+    &:before {
+      @include transform(scale3d(1,1,1));
+      @include transform-origin(0%,50%);
+      right: 0;
+    }
+  }
+}
+
+ul.wp-block-latest-posts,
+ol.wp-block-latest-comments {
+  a {
+    color: inherit;
+    &:hover,
+    &:focus,
+    &:active {
+      text-decoration: none;
+      color: var(--g5-color-accent);
+    }
+  }
+  padding: 0;
+  list-style: none;
+  li {
+    line-height: 20px;
+    + li {
+      margin-top: 16px;
+    }
+  }
+}
+
+.wp-block-cover-image,
+.wp-block-cover {
+  color: #f8f9f9;
+  margin-bottom: 30px;
+  p {
+    margin-bottom: 0;
+    line-height: 1.25;
+  }
+  a {
+    color: inherit;
+  }
+}
+
+.wp-block-button {
+  margin-bottom: 30px;
+}
+
+.wp-block-embed {
+  margin: 0 0 30px;
+}
+
+.blocks-gallery-grid {
+  margin-bottom: -16px;
+  padding-left: 0 !important;
+}
+
+.wp-block-gallery .blocks-gallery-image figcaption,
+.wp-block-gallery .blocks-gallery-item figcaption,
+.blocks-gallery-grid .blocks-gallery-image figcaption,
+.blocks-gallery-grid .blocks-gallery-item figcaption {
+  color: #fff !important;
+  margin: 0;
+}
+
+.blocks-gallery-caption {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+.wp-block-categories,
+.wp-block-archives {
+  select {
+    width: 100%;
+    max-width: 100%;
+  }
+
+}
+
+
+.wp-block-columns,
+.wp-block-group,
+.wp-block-group.has-background,
+.wp-block-search,
+ul.wp-block-categories,
+ul.wp-block-archives,
+.wp-block-archives.wp-block-archives-dropdown,
+ol.wp-block-latest-comments,
+.wp-block-media-text,
+.wp-block-rss,
+.wp-block-latest-posts,
+.wp-block-latest-comments,
+.wp-block-archives,
+.wp-block-categories {
+  margin-bottom: 30px;
+}
+
+.wp-block-column > *:last-child {
+  margin-bottom: 0;
+}
+
+.wp-block-search {
+  position: relative;
+  .search-field {
+    width: 100%;
+    padding-right: 40px;
+  }
+
+  .wp-block-search__button {
+    position: absolute;
+    width: 40px;
+    height: 48px;
+    bottom: 0;
+    right: 0;
+    background: none;
+    border: none;
+    font-size: 0;
+    cursor: pointer;
+    &:before {
+      font-family: "Font Awesome 5 Pro";
+      font-weight: 300;
+      content: "\f002";
+      font-size: 14px;
+    }
+  }
+
+  .search-submit,
+  [type="submit"] {
+
+  }
+}
+
+.wp-block-rss {
+  list-style: none;
+  padding: 0;
+  a {
+    color: inherit;
+  }
+}

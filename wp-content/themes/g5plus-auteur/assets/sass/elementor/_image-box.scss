@@ -1,0 +1,31 @@
+.ube-icon-box-wrapper {
+	--ube-ib-spacing: 20px;
+}
+.ube-ib-title{
+	margin-top: 0;
+	mark{
+		background-color: transparent;
+		padding: 0;
+		display: block;
+		text-transform: uppercase;
+		font-size: 15px;
+		letter-spacing: 4px;
+		color: var(--g5-color-text-main);
+		margin-bottom: 4px;
+		font-family: var(--g5-font-primary);
+		font-weight: 400;
+	}
+}
+.ube-ib-desc{
+	font-size: 15px;
+	margin-top: 12px;
+}
+
+.ube-image-box{
+	.ube-ib-title{
+		font-size: 34px;
+		font-weight: 400;
+		font-family: var(--g5-font-primary);
+		text-transform: none;
+	}
+}

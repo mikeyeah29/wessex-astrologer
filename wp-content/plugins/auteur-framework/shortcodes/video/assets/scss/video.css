@@ -1,0 +1,65 @@
+.gsf-video {
+  text-align: center;
+}
+.gsf-video a {
+  display: inline-block;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  width: 90px;
+  height: 90px;
+  position: relative;
+  border-radius: 50%;
+}
+.gsf-video a i {
+  font-size: 20px;
+  line-height: 90px;
+  padding-left: 4px;
+}
+.gsf-video a:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+  border-radius: 50%;
+}
+.gsf-video a:hover:before, .gsf-video a:focus:before, .gsf-video a:active:before {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+  opacity: 0;
+}
+.gsf-video.gsf-video-large a:before {
+  border: 5px solid;
+}
+.gsf-video.gsf-video-medium a {
+  width: 80px;
+  height: 80px;
+}
+.gsf-video.gsf-video-medium a i {
+  line-height: 80px;
+  font-size: 18px;
+}
+.gsf-video.gsf-video-medium a:before {
+  border: 3px solid;
+}
+.gsf-video.gsf-video-small a {
+  width: 70px;
+  height: 70px;
+}
+.gsf-video.gsf-video-small a i {
+  line-height: 70px;
+  font-size: 16px;
+}
+.gsf-video.gsf-video-small a:before {
+  border: 3px solid;
+}
+
+/*# sourceMappingURL=video.css.map */

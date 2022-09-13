@@ -1,0 +1,25 @@
+@import "base/page-title";
+
+ul.gf-breadcrumbs {
+	li {
+		font-size: 15px;
+		font-style: italic;
+		a {
+			color: inherit;
+			&:hover,
+			&:focus,
+			&:active {
+				text-decoration: none;
+				color: var(--g5-color-accent);
+			}
+			@include transition(all 0.3s);
+		}
+		&.breadcrumb-sep {
+			margin: 0 10px;
+		}
+		> span,
+		&.breadcrumb-leaf {
+			color: var(--g5-color-accent);
+		}
+	}
+}

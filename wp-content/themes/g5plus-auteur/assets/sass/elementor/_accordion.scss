@@ -1,0 +1,49 @@
+.ube-accordion-card:not(:last-child) {
+	margin-bottom: 30px;
+}
+
+.ube-accordion-card-header {
+	padding: 15px 0;
+
+	.card-header {
+		border-bottom-color: #ccc;
+	}
+
+	.ube-accordion-link {
+		color: var(--g5-color-heading);
+		font-size: 18px;
+		letter-spacing: 0.8px;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+}
+
+.ube-accordion
+{
+	.ube-accordion-card:not(.ube-accordion-separate):last-child:not(.active) .ube-accordion-card-header {
+		border-bottom-color: #ccc;
+	}
+}
+
+.ube-accordion-card {
+	border-width: 0;
+	background-color: transparent;
+}
+
+.ube-accordion-icon {
+	font-size: 12px;
+	height: 2em;
+	width: 2em;
+	font-weight: 300;
+	color: var(--g5-color-muted);
+	border-radius: 50%;
+	border: 2px solid currentColor;
+	@include d-flex();
+	@include justify-content-center();
+	@include align-items-center();
+
+}
+
+.ube-accordion-card-body {
+	padding: 25px 0 10px;
+}

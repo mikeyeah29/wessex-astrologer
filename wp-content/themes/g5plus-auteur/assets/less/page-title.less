@@ -1,0 +1,19 @@
+@import "base/page-title";
+
+ul.gf-breadcrumbs {
+	li {
+		font-size: 15px;
+		font-style: italic;
+		a {
+			.gsf-link;
+			.transition(all 0.3s);
+		}
+		&.breadcrumb-sep {
+			margin: 0 10px;
+		}
+		> span,
+		&.breadcrumb-leaf {
+			&:extend(.accent-color);
+		}
+	}
+}

@@ -1,0 +1,39 @@
+@import "base/custom-elementor";
+@import "elementor/elementor";
+
+@media (min-width: 1025px) {
+	.el-order-lg-1 {
+		-webkit-box-ordinal-group: 2;
+		-ms-flex-order: 1;
+		order: 1;
+	}
+	.el-order-lg-2 {
+		-webkit-box-ordinal-group: 3;
+		-ms-flex-order: 2;
+		order: 2;
+	}
+
+	.el-order-lg-3 {
+		-webkit-box-ordinal-group: 4;
+		-ms-flex-order: 3;
+		order: 3;
+	}
+}
+
+body.elementor-template-full-width {
+	#site-footer > .container,
+	#primary-content > .container{
+		max-width: 100%;
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+@media (min-width: 1200px) {
+	.g5__el-width-1730 {
+		&.elementor-section.elementor-section-boxed > .elementor-container {
+			max-width: 1730px !important;
+		}
+	}
+
+}

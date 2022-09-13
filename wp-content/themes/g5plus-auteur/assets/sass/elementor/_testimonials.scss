@@ -1,0 +1,55 @@
+.ube-testimonial {
+	--ube-testimonial-author-width: 90px;
+	--ube-testimonial-author-height: 90px;
+}
+div.ube-testimonial-avatar img{
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+.ube-testimonial-client-say{
+	font-size: 24px;
+	font-family: var(--g5-font-primary);
+	font-weight: 400;
+	font-style: italic;
+	color: var(--g5-color-heading);
+}
+.ube-testimonial-author-name{
+	font-size: 18px;
+}
+.ube-testimonial-author-job{
+	font-size: 15px;
+	color: var(--g5-color-text-main);
+	margin-top: 9px
+}
+
+.ube-testimonial-layout-01 .ube-testimonial-content,
+.ube-testimonial-layout-02 .ube-testimonial-info,
+.ube-testimonial-layout-03 .ube-testimonial-avatar,
+.ube-testimonial-layout-06 .ube-testimonial-avatar {
+	margin-bottom: 35px;
+}
+.ube-testimonial-layout-01 .ube-testimonial-author-name,
+.ube-testimonial-layout-02 .ube-testimonial-author-name,
+.ube-testimonial-layout-03 .ube-testimonial-author-name,
+.ube-testimonial-layout-06 .ube-testimonial-author-name {
+	margin-top: 40px;
+}
+
+.ube-testimonial-rating{
+	font-size: 20px;
+	.ube-icon{
+		svg{
+			color: var(--g5-color-muted);
+		}
+		+ .ube-icon{
+			padding-left: 10px;
+		}
+	}
+}
+
+.ube-testimonial-layout-01{
+	.ube-testimonial-content{
+		@include d-flex();
+		@include flex-column-reverse();
+	}
+}

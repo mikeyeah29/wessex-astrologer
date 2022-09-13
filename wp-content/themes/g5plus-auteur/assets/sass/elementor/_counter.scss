@@ -1,0 +1,22 @@
+.ube-counter {
+	.card-title {
+		font-family: var(--g5-font-primary);
+		font-weight: 400;
+
+		.ube-counter-number, .ube-counter-icon-prefix, .ube-counter-icon-suffix {
+			font-size: 56px;
+		}
+	}
+
+	&.ube-counter-number-top .card-title {
+		margin-bottom: 40px;
+	}
+
+	.card-text {
+		font-size: 15px;
+		color: var(--g5-color-muted);
+		text-transform: uppercase;
+		font-weight: 600;
+		letter-spacing: 3px;
+	}
+}

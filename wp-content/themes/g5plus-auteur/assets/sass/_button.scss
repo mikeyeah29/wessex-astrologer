@@ -1,0 +1,213 @@
+input[type="submit"],
+input[type="button"],
+input[type="reset"],
+.btn {
+	display: inline-block;
+	font-weight: 800;
+	position: relative;
+	letter-spacing: 1px;
+	text-align: center;
+	vertical-align: middle;
+	touch-action: manipulation;
+	cursor: pointer;
+	background-image: none;
+	border: 1px solid transparent;
+	text-transform: uppercase;
+	@include button-size(48px, 35px, 13px);
+	@include border-radius(0);
+	@include transition(all .3s ease-in-out);
+	&:hover,
+	&:focus,
+	&.focus {
+		text-decoration: none;
+	}
+
+	&:active,
+	&.active {
+		outline: 0;
+		background-image: none;
+	}
+
+	&.disabled,
+	&[disabled],
+	fieldset[disabled] & {
+		cursor: not-allowed;
+		opacity: .65;
+	}
+}
+
+.btn {
+	min-width: 160px;
+	text-align: center;
+
+}
+
+.btn,
+input[type="submit"],
+input[type="button"],
+input[type="reset"] {
+	@include button-variant(var(--g5-color-accent-foreground), var(--g5-color-accent), var(--g5-color-accent), #fff,#333,#333);
+}
+
+
+a.btn {
+	&.disabled,
+	fieldset[disabled] & {
+		pointer-events: none; // Future-proof disabling of clicks on `<a>` elements
+	}
+}
+
+
+.btn-block {
+	display: block;
+	width: 100%;
+}
+
+
+
+.btn.btn-xs {
+	@include button-size(44px, 25px, 13px);
+}
+
+.btn.btn-sm {
+	@include button-size(46px, 30px, 13px);
+}
+
+.btn.btn-md {
+	@include button-size(48px, 35px, 13px);
+}
+
+.btn.btn-lg {
+	@include button-size(50px, 40px, 14px);
+}
+
+.btn.btn-xl {
+	@include button-size(62px, 35px, 24px);
+}
+
+
+
+.btn.btn-round {
+	@include border-radius(5em);
+}
+
+
+.btn.btn-inline {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.btn.btn-icon-left i {
+	margin-right: 10px;
+}
+
+.btn.btn-icon-right i {
+	margin-left: 10px;
+}
+
+
+.btn.btn-accent {
+	@include button-variant(var(--g5-color-accent-foreground), var(--g5-color-accent), var(--g5-color-accent), #fff,#333,#333);
+}
+
+
+.btn.btn-primary {
+	@include button-variant(var(--g5-color-primary-foreground), var(--g5-color-primary), var(--g5-color-primary), #fff, #333, #333);
+}
+
+
+.btn.btn-white {
+	@include button-variant(#333, #fff, #fff, var(--g5-color-accent-foreground), var(--g5-color-accent), var(--g5-color-accent));
+}
+
+
+
+.btn.btn-gray {
+	@include button-variant(#fff, gray, gray,#fff, #333, #333);
+	&.btn-outline {
+		color: #333;
+		border-color: #ccc;
+		&:focus,
+		&:hover,
+		&:active {
+			background-color: #333;
+			border-color: #333;
+		}
+
+	}
+}
+
+.btn.btn-red {
+	@include button-variant(#fff, #e14e42, #e14e42, #e14e42, transparent, #e14e42);
+}
+
+.btn.btn-black {
+	@include button-variant(#fff, #161616, #161616, var(--g5-color-accent-foreground), var(--g5-color-accent), var(--g5-color-accent));
+}
+
+.btn.btn-light {
+	@include button-variant(#333, #fff, #fff, var(--g5-color-accent-foreground), var(--g5-color-accent), var(--g5-color-accent));
+}
+
+
+
+.btn.btn-success {
+	@include button-variant(var(--g5-color-success-foreground), var(--g5-color-success), var(--g5-color-success),var(--g5-color-primary-foreground), var(--g5-color-primary), var(--g5-color-primary));
+}
+
+.btn.btn-danger {
+	@include button-variant(var(--g5-color-danger-foreground), var(--g5-color-danger), var(--g5-color-danger),var(--g5-color-primary-foreground), var(--g5-color-primary), var(--g5-color-primary));
+}
+
+.btn.btn-warning {
+	@include button-variant(var(--g5-color-warning-foreground), var(--g5-color-warning), var(--g5-color-warning),var(--g5-color-primary-foreground), var(--g5-color-primary), var(--g5-color-primary));
+}
+
+.btn.btn-info {
+	@include button-variant(var(--g5-color-info-foreground), var(--g5-color-info), var(--g5-color-info),var(--g5-color-primary-foreground), var(--g5-color-primary), var(--g5-color-primary));
+}
+
+.btn-container.btn-inline {
+	display: inline-block;
+}
+
+.btn.btn-outline {
+	background-color: transparent;
+}
+
+.btn.btn-link {
+	text-decoration: none;
+	@include border-radius(0);
+	line-height: 1.5;
+	border: none;
+	height: auto;
+	padding: 0;
+	min-width: unset;
+	font-weight: 700;
+	position: relative;
+	background-color: transparent !important;
+	&:before {
+		position: absolute;
+		display: block;
+		content: '';
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 1px;
+		background-color: currentColor;
+		@include transition(transform 0.4s ease);
+		@include transform(scale3d(0,1,1));
+		@include transform-origin(100%,50%);
+		@include transition-timing-function(cubic-bezier(0.8, 0, 0.2, 1));
+	}
+	&:hover,
+	&:focus,
+	&:active {
+		&:before {
+			@include transform(scale3d(1,1,1));
+			@include transform-origin(0%,50%);
+		}
+	}
+}
+
+

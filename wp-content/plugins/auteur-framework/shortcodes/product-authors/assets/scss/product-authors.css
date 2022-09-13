@@ -1,0 +1,21 @@
+.gf-product-authors .entry-thumbnail-wrap {
+  position: relative;
+}
+.gf-product-authors .entry-thumbnail-wrap > a {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 2;
+}
+.gf-product-authors .entry-thumbnail-wrap:hover .zoom-image {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+.gf-product-authors .entry-thumbnail-wrap:hover .entry-thumbnail-overlay:after {
+  opacity: 1;
+}
+
+/*# sourceMappingURL=product-authors.css.map */

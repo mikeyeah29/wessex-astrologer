@@ -1,0 +1,194 @@
+.@{skin_id},
+.gf-skin .@{skin_id},
+.gf-skin .gf-skin .@{skin_id},
+.gf-skin .gf-skin .gf-skin .@{skin_id} {
+
+    color: @text_color;
+    background-color: @background_color;
+    border-color: @border_color;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .heading-color {
+        color: @heading_color;
+    }
+
+    .border-color {
+        border-color: @border_color;
+    }
+
+    .disable-color {
+        color: @disable_color;
+    }
+
+    .text-hover-color {
+        color: @text_hover_color;
+    }
+
+    .top-drawer-toggle {
+        border-top-color: @background_color;
+        a {
+            color: @text_color;
+        }
+    }
+
+
+    .widget_calendar .calendar_wrap caption {
+        color: @text_color;
+    }
+
+
+    .wp-block-tag-cloud,
+    .tagcloud {
+        a {
+            & when (lightness(@background_color) < 50) {
+                background-color: #444;
+            }
+            & when (lightness(@background_color) >= 50) {
+                background-color: #f4f3ec;
+            }
+            color: @text_color;
+            &:active,
+            &:focus,
+            &:hover {
+                background-color: @accent_color;
+                color: @foreground_accent_color;
+            }
+        }
+    }
+
+    .widget_calendar #wp-calendar td.active,
+    .widget_calendar .calendar_wrap caption,
+    .widget_calendar #wp-calendar th {
+
+        & when (lightness(@background_color) < 50) {
+            background-color: #444;
+        }
+
+        & when (lightness(@background_color) >= 50) {
+            background-color: #f8f8f8;
+        }
+    }
+
+    .widget_calendar .calendar_wrap caption,
+    .widget_calendar #wp-calendar tbody td,
+    .widget_calendar #wp-calendar th {
+        border-color: @border_color;
+    }
+
+    .gf-no-results h2 span:after, .gf-no-results h2 span:before {
+        border-color: @border_color;
+    }
+
+    .gf-entry-content {
+        hr {
+            border-color: @border_color;
+        }
+
+        table {
+            border-color: @border_color;
+        }
+        td,
+        th {
+            border-color: @border_color;
+        }
+
+        thead th {
+            color: @heading_color;
+            & when (lightness(@background_color) < 50) {
+                background-color: #444;
+            }
+
+            & when (lightness(@background_color) >= 50) {
+                background-color: #f8f8f8;
+            }
+        }
+
+        del {
+            color: @disable_color;
+        }
+
+        .wp-block-code,
+        pre {
+            & when (lightness(@background_color) < 50) {
+                background-color: #444;
+            }
+
+            & when (lightness(@background_color) >= 50) {
+                background-color: #f8f8f8;
+            }
+
+            color: @heading_color;
+            border-color: @border_color;
+        }
+
+        blockquote:not(.is-large):not(.is-style-large) {
+            border-color:@heading_color;
+        }
+
+        .wp-block-quote cite,
+        .wp-block-quote footer,
+        .wp-block-quote__citation {
+            color: @text_color;
+        }
+
+        .blocks-gallery-caption,
+        .wp-caption-text,
+        figcaption {
+            color: @disable_color;
+        }
+
+
+
+        .gallery-icon img {
+            border-color: @border_color;
+        }
+
+        .gsf-page-links {
+            span {
+                border-color: @border_color;
+                color: @heading_color;
+            }
+        }
+
+    }
+
+
+    .gf-sidebar-toggle {
+        & when (lightness(@background_color) < 50) {
+            background-color: #f8f8f8;
+            color: #444;
+        }
+
+        & when (lightness(@background_color) >= 50) {
+            background-color: #444;
+            color: #f8f8f8;
+        }
+    }
+
+    .gf-page-title-default {
+        & when (lightness(@background_color) < 50) {
+            background-color: #444;
+        }
+
+        & when (lightness(@background_color) >= 50) {
+            background-color: #f4f3ec;
+        }
+    }
+    /**
+* Desktop
+* ----------------------------------------------------------------------------
+*/
+    .nav-tabs {
+        //border-color: @border_color;
+    }
+    .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+        /*color: @text_color;
+        background-color: @background_color;
+        border-color: @border_color;*/
+    }
+}

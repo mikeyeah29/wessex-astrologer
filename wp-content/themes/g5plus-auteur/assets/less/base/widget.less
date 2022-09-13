@@ -1,0 +1,114 @@
+.widget {
+	position: relative;
+	.screen-reader-text {
+		display: none;
+	}
+	&:after {
+		content: '';
+		clear: both;
+		display: block;
+	}
+	+ .widget {
+		margin-top: 48px;
+	}
+	a {
+		.gsf-link;
+	}
+}
+
+.widget_rss,
+.widget_recent_entries,
+.widget_recent_comments,
+.widget_meta {
+	ul {
+		padding-left: 0;
+		margin: 0;
+		list-style: none;
+	}
+
+	li {
+		line-height: 20px;
+		+ li {
+			margin-top: 16px;
+		}
+	}
+
+}
+
+.widget_rss {
+	ul {
+		.rsswidget {
+			display: block;
+			font-weight: bold;
+		}
+		.rss-date {
+			font-style: italic;
+			font-size: 13px;
+			margin: 5px 0;
+			display: block;
+		}
+	}
+}
+
+.widget_archive,
+.widget_categories,
+.widget_product_categories {
+	select {
+		width: 100%;
+	}
+}
+
+.widget_calendar {
+	.calendar_wrap caption {
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 15px;
+		padding: 15px;
+		color: @text_color;
+		background-color: #f8f8f8;
+		border: solid 1px @border_color;
+		margin-bottom: 5px;
+		text-align: center;
+		caption-side: top;
+	}
+
+	#wp-calendar {
+		width: 100%;
+		td.active,
+		th {
+			background-color: #f8f8f8;
+		}
+		tbody td, th {
+			border: solid 1px @border_color;
+			text-align: center;
+			padding: 5px 0;
+		}
+		tfoot td {
+			text-transform: uppercase;
+			font-weight: bold;
+			padding: 5px 0 0 0;
+			font-size: 13px;
+		}
+		td#next {
+			text-align: right;
+		}
+	}
+}
+
+
+.gf-sidebar-toggle {
+	display: none;
+}
+
+@media (max-width: 991px) {
+	.primary-sidebar {
+		margin-top: 30px;
+	}
+}
+
+.widget_layered_nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	border: none;
+}

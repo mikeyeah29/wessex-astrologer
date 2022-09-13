@@ -1,0 +1,171 @@
+@import "../../../../assets/scss/mixin";
+
+.gsf-our-team {
+    img {
+        width: 100%;
+    }
+    .ourteam-thumb {
+        position: relative;
+        overflow: hidden;
+        &:before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            content: '';
+            @include transition(all 0.3s);
+            z-index: 1;
+            opacity: 0;
+        }
+        .ourteam-thumb-inner {
+            @include transition(all 0.3s);
+        }
+    }
+    .ourteam-content {
+        .ourteam-name {
+            a {
+                @include transition(0.3s);
+            }
+        }
+    }
+    &.style-1,
+    &.style-3 {
+        .ourteam-thumb {
+            position: relative;
+            i {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                @include transform(translate(-50%, -50%) scale(0.4));
+                font-size: 34px;
+                z-index: 3;
+                @include transition(0.3s);
+                opacity: 0;
+            }
+            .ourteam-thumb-inner {
+                position: relative;
+                z-index: 2;
+                @include transition(all 0.3s);
+            }
+        }
+        .ourteam-content {
+            .ourteam-name {
+                font-size: 24px;
+                line-height: 1.5;
+                margin-top: 22px;
+                margin-bottom: 8px;
+            }
+            .ourteam-meta {
+                height: 32px;
+                overflow: hidden;
+                .ourteam-position {
+                    display: block;
+                    line-height: 32px;
+                    white-space: nowrap;
+                    font-size: 14px;
+                    font-weight: normal;
+                    font-style: italic;
+                    letter-spacing: 1px;
+                    @include transition(0.3s);
+                    text-transform: uppercase;
+                }
+                .ourteam-socials {
+                    line-height: 32px;
+                    white-space: nowrap;
+                    @include transition(0.3s);
+                    a {
+                        margin-right: 15px;
+                    }
+                }
+            }
+        }
+        &:hover {
+            .ourteam-thumb {
+                &:before {
+                    opacity: 1;
+                }
+                i {
+                    @include transform(translate(-50%, -50%) scale(1));
+                    opacity: 1;
+                }
+                .ourteam-thumb-inner {
+                    opacity: 0.2;
+                }
+            }
+            .ourteam-content .ourteam-meta {
+                .ourteam-position {
+                    @include transform(translateY(-32px));
+                }
+                .ourteam-socials {
+                    @include transform(translateY(-32px));
+                }
+            }
+        }
+    }
+    &.style-1 {
+        .ourteam-thumb {
+            @include border-radius(100%);
+            overflow: hidden;
+        }
+        .ourteam-content {
+            text-align: center;
+        }
+    }
+    .ourteam-content .ourteam-name {
+        margin-top: 30px;
+    }
+    &.style-2 {
+        .ourteam-thumb:before {
+            background-color: rgba(51,3,0,0.8);
+        }
+        .ourteam-content {
+            position: absolute;
+            bottom: 34px;
+            left: 40px;
+            right: 20px;
+            z-index: 2;
+            @include transition(0.3s);
+            @include transform(translateY(50px));
+            opacity: 0;
+            .ourteam-name {
+                font-size: 34px;
+                line-height: 1.06;
+                margin-top: 0;
+                margin-bottom: 10px;
+                color: #fff;
+            }
+            .ourteam-position {
+                font-size: 14px;
+                font-weight: normal;
+                font-style: italic;
+                line-height: 2.29;
+                letter-spacing: 1px;
+                color: #fff;
+            }
+        }
+        .ourteam-thumb-inner {
+            background-color: #f8f8f8;
+            img {
+                mix-blend-mode: luminosity;
+            }
+        }
+        &:hover {
+            .ourteam-thumb:before {
+                opacity: 1;
+            }
+            .ourteam-content {
+                @include transform(translateY(0));
+                opacity: 1;
+            }
+        }
+    }
+}
+.custom-ourteam-blend {
+    .ourteam-thumb-inner {
+        background-color: #d8d8d8;
+        img {
+            mix-blend-mode: luminosity;
+        }
+    }
+}

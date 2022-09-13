@@ -1,0 +1,132 @@
+.ube-slider {
+	.slick-dots ul {
+		padding-left: 0;
+	}
+
+	&:not(.ube-slider-arrow-size-xl), &:not(.ube-slider-arrow-size-xl) {
+		.slick-arrow {
+			width: 48px;
+			height: 48px;
+			line-height: 48px;
+		}
+	}
+
+	&:not(.ube-slider-arrow-type-classic) .slick-arrow {
+		@include border-radius(100%);
+		border: 1px solid;
+		border-color: var(--g5-background-color-contrast-05);
+	}
+
+	.slick-arrow {
+		@include d-flex();
+		@include align-items-center();
+		padding: 0;
+		text-align: center;
+		@include transition(all .3s);
+		background-color: transparent;
+		color: var(--g5-color-text-main);
+		border-color: var(--g5-background-color-contrast-05);
+
+		&:hover {
+			color: var(--g5-color-heading);
+			border-color: currentColor;
+		}
+	}
+
+	.slick-arrow.slick-disabled{
+		opacity: 0.5;
+	}
+
+	.slick-dots li {
+		@include d-flex();
+		@include align-items-center();
+		font-size: 0;
+		position: relative;
+		@include border-radius(50%);
+		padding: 0 3px;
+		color: var(--g5-color-link-hover);
+		span:before{
+			font-size: 0;
+		}
+		&:before {
+			content: '';
+			display: block;
+			@include border-radius(50%);
+			width: 10px;
+			height: 10px;
+			@include transition(all 0.3s);
+			background-color: rgba(var(--g5-color-heading-r), var(--g5-color-heading-g), var(--g5-color-heading-b), 0.4);
+
+
+		}
+
+		&.slick-active,
+		&:hover,
+		&:focus {
+			&:before {
+				width: 16px;
+				height: 16px;
+				border: 1px solid;
+				@include transform(scale(0.5));
+				border-color: currentColor;
+				@include transform(scale(1));
+				opacity: 1;
+				background-color: transparent;
+			}
+		}
+	}
+}
+
+.ube-slider-dots-sm{
+	.slick-dots li {
+		&:before {
+			width: 7px;
+			height: 7px;
+		}
+
+		&.slick-active,
+		&:hover,
+		&:focus {
+			&:before {
+				width: 10px;
+				height: 10px;
+			}
+		}
+	}
+}
+
+.ube-slider-dots-lg{
+	.slick-dots li {
+		&:before {
+			width: 10px;
+			height: 10px;
+		}
+
+		&.slick-active,
+		&:hover,
+		&:focus {
+			&:before {
+				width: 16px;
+				height: 16px;
+			}
+		}
+	}
+}
+
+.ube-slider-dots-xl{
+	.slick-dots li {
+		&:before {
+			width: 15px;
+			height: 15px;
+		}
+
+		&.slick-active,
+		&:hover,
+		&:focus {
+			&:before {
+				width: 20px;
+				height: 20px;
+			}
+		}
+	}
+}

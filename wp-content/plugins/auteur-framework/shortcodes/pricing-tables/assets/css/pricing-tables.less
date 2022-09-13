@@ -1,0 +1,251 @@
+.gf-pricing-tables {
+	padding-top: 25px;
+	&.style-1 {
+		.pricing-item {
+			position: relative;
+			background-color: #f4f3ec;
+			padding: 35px 35px 0 35px;
+			.transition(0.3s);
+			text-align: center;
+			.featured-text {
+				width: 80px;
+				height: 80px;
+				position: absolute;
+				top: -28px;
+				right: -27px;
+				.border-radius(100%);
+				text-align: center;
+				text-transform: uppercase;
+				transform: rotate(-345deg);
+				font-size: 12px;
+				span {
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					.transform(translate(-50%, -50%));
+				}
+			}
+			.pricing-price {
+				margin-bottom: 10px;
+				font-size: 0;
+				padding-left: 30px;
+				> * {
+					display: inline-block;
+				}
+				span {
+					font-size: 24px;
+					line-height: 1;
+					color: #333;
+					vertical-align: top;
+				}
+				h4 {
+					color: #333;
+					margin: 0 10px 0 0;
+					font-size: 64px;
+					font-weight: 700;
+					line-height: 0.88;
+				}
+				p {
+					font-size: 15px;
+					color: #7e7e7e;
+				}
+			}
+			.pricing-name {
+				margin: 0;
+				text-transform: uppercase;
+				font-size: 15px;
+				line-height: 1.87;
+				letter-spacing: 2px;
+				color: #333;
+				margin-bottom: 43px;
+			}
+			.pricing-features {
+				margin-top: 42px;
+				padding-bottom: 55px;
+				ul {
+					list-style: none;
+					padding: 0;
+				}
+				li {
+					font-size: 15px;
+					line-height: 1.8;
+					padding: 6.5px 0;
+					color: #7e7e7e;
+				}
+			}
+			.pricing-button {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				&.btn {
+					padding-top: 17px;
+					padding-bottom: 17px;
+				}
+			}
+			&.is-featured,
+			&:hover {
+				.box-shadow(0 0 57px 0 rgba(0, 0, 0, 0.08));
+				border-color: transparent !important;
+			}
+		}
+	}
+	&.style-2 {
+		position: relative;
+		.border-radius(5px);
+		padding: 34px 30px 47px;
+		background-color: rgba(0,0,0,0.3);
+		text-align: center;
+		.transition(0.3s);
+		&.is-featured {
+			padding-top: 59px;
+			padding-bottom: 64px;
+			z-index: 2;
+		}
+		.pricing-price {
+			font-size: 0;
+			> * {
+				display: inline-block;
+				color: #fff;
+			}
+			span {
+				font-size: 18px;
+				font-weight: bold;
+				line-height: 1.33;
+				vertical-align: bottom;
+				margin-bottom: 4px;
+			}
+			h4 {
+				margin: 0;
+				font-size: 64px;
+				font-weight: 800;
+				line-height: 0.88;
+			}
+			p {
+				font-size: 14px;
+				line-height: 1.71;
+			}
+		}
+		.pricing-name {
+			position: relative;
+			text-transform: uppercase;
+			font-size: 18px;
+			font-weight: bold;
+			line-height: 1.33;
+			letter-spacing: 1px;
+			margin-bottom: 44px;
+			margin-top: 0;
+		}
+		.pricing-features {
+			margin-top: 37px;
+			opacity: 0.7;
+			ul {
+				list-style: none;
+				padding: 0;
+			}
+			li {
+				font-size: 14px;
+				line-height: 1.8;
+				padding: 15px 0;
+				color: #fff;
+				+ li {
+					border-top: 1px solid rgba(255,255,255,0.2);
+				}
+			}
+		}
+		.pricing-button {
+			margin-top: 30px;
+		}
+		&.is-featured,
+		&:hover {
+			background-color: rgba(0,0,0,.3);
+		}
+	}
+	&.style-3 {
+		position: relative;
+		.border-radius(5px);
+		padding: 34px 30px 47px;
+		background-color: #fcfcfc;
+		box-shadow: 0 0 57px 0 rgba(0, 0, 0, 0.08);
+		text-align: center;
+		.transition(0.3s);
+		&.is-featured {
+			padding-top: 59px;
+			padding-bottom: 64px;
+			z-index: 2;
+		}
+		.pricing-price {
+			font-size: 0;
+			> * {
+				display: inline-block;
+			}
+			span {
+				font-size: 18px;
+				font-weight: bold;
+				line-height: 1.33;
+				vertical-align: bottom;
+				margin-bottom: 4px;
+			}
+			h4 {
+				margin: 0;
+				font-size: 64px;
+				font-weight: 800;
+				line-height: 0.88;
+			}
+			p {
+				font-size: 14px;
+				line-height: 1.71;
+			}
+		}
+		.pricing-name {
+			position: relative;
+			text-transform: uppercase;
+			font-size: 18px;
+			font-weight: bold;
+			line-height: 1.33;
+			letter-spacing: 1px;
+			color: #333;
+			margin-bottom: 44px;
+			margin-top: 0;
+		}
+		.pricing-features {
+			margin-top: 37px;
+			ul {
+				list-style: none;
+				padding: 0;
+			}
+			li {
+				font-size: 14px;
+				line-height: 1.8;
+				padding: 15px 0;
+				+ li {
+					border-top: 1px solid #f3f3f3;
+				}
+			}
+		}
+		.pricing-button {
+			margin-top: 30px;
+		}
+		&.is-featured,
+		&:hover {
+			background-color: #fff;
+		}
+	}
+}
+
+@media (max-width: 991px) {
+	.gf-pricing-tables {
+		&.style-1 {
+			.pricing-item {
+				padding: 35px 15px 0 15px;
+				.featured-text {
+					right: -10px;
+					top: -10px;
+					width: 60px;
+					height: 60px;
+					font-size: 8px;
+				}
+			}
+		}
+	}
+}

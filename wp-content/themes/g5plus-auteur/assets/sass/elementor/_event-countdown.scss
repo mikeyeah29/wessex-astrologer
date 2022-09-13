@@ -1,0 +1,27 @@
+.ube-event-countdown.gsf-countdown .countdown-style-01{
+	.countdown-value{
+		color: var(--g5-color-accent);
+		font-family: var(--g5-font-primary);
+	}
+
+	.countdown-text{
+		opacity: 0.7;
+		font-weight: bold;
+		line-height: 1.5;
+		letter-spacing: 3px;
+		text-transform: uppercase;
+		color: var(--g5-color-muted);
+	}
+}
+
+@media (min-width: 768px) {
+	.ube-event-countdown.gsf-countdown .countdown-style-01{
+		.countdown-value{
+			font-size: 56px;
+		}
+	}
+
+	.countdown-text{
+		font-size: 16px;
+	}
+}
